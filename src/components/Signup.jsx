@@ -2,6 +2,7 @@ import React from "react";
 
 const Signup = () => {
     return (
+        <form>
         <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-22">
             <div className="w-full max-w-4xl bg-white p-8 shadow-lg rounded-lg">
                 <h2 className="text-2xl font-bold text-center mb-6">Signup</h2>
@@ -47,6 +48,7 @@ const Signup = () => {
                 </p>
             </div>
         </div>
+        </form>
     );
 };
 
