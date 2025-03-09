@@ -1,6 +1,10 @@
 import React from "react"
+import { Link } from "react-router-dom";
+import Login from "./Login";
+
 
 const Navbar = () => {
+
   return (
     <div>
       <nav className="fixed top-0 left-0 w-full bg-white shadow-md z-50 px-6 py-4 border-b border-gray-200 flex items-center justify-between">
@@ -30,16 +34,13 @@ const Navbar = () => {
         </div>
 
         <div className="flex items-center space-x-4">
-          <a href="/login" className="text-gray-600 hover:text-gray-900 transition-colors duration-200">
-            Log In
-          </a>
+          <a href="/login" className="text-gray-600 hover:text-gray-900 transition-colors duration-200" >Login</a>
+
           <a href="/signup" className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-md transition-colors duration-200">
             Sign Up
           </a>
         </div>
       </nav>
-
-      {/* Extra padding to prevent content from being hidden behind the fixed navbar */}
       <div className="pt-20"></div>
     </div>
   )
